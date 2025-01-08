@@ -19,11 +19,11 @@ devnet = []
 client = []
 
 [dependencies]
-anchor-lang = { version = "0.29.0", features = ["init-if-needed"] }
-anchor-spl = { version = "0.29.0", features = ["metadata"] }
-spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
+anchor-lang = {git="https://github.com/coral-xyz/anchor", rev="2ae3774639e299e4eb64d27176989699056f4364", directory="lang", features = ["init-if-needed"] }
+anchor-spl = {git="https://github.com/coral-xyz/anchor", rev="2ae3774639e299e4eb64d27176989699056f4364", directory="spl", features = ["metadata"] }
+spl-token = { version = "7.0.0", features = ["no-entrypoint"] }
 spl-math = { version = "0.2", features = ["no-entrypoint"] }
-spl-memo = "4.0.0"
+spl-memo = "6.0.0"
 uint = "0.9.1"
 solana-security-txt = "1.1.1"
 bytemuck = { version = "1.4.0", features = ["derive", "min_const_generics"] }
